@@ -1,0 +1,46 @@
+.graphs{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.line_graphs{
+    width: 65%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.pie_chart{
+    width: 30%;
+    object-fit: contain;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.pie_chart canvas{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 580px) {
+    .graphs{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .line_graphs{
+       width: 90%;
+    }
+    .pie_chart{
+        width: 90%;
+    }
+}

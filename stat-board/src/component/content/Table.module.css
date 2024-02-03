@@ -1,0 +1,91 @@
+.tablesec {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.table {
+  width: 75%;
+  overflow-x: auto;
+}
+
+.table table td,
+.table table th {
+  border: 2px solid #ededed;
+  text-align: left;
+}
+
+.table table {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 10px;
+  border: none;
+}
+
+.table table tbody tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.table table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  font-size: 16px;
+  padding: 15px 10px 15px 20px;
+}
+
+.table td {
+  font-size: 14px;
+  padding: 10px 10px 10px 20px;
+}
+
+.paginations {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginations button {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.paginations span{
+font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.arrow{
+  padding: inherit;
+  border: 1px solid #ededed;
+  background-color: #c2bebe;
+}
+.inActivePage{
+  border: 1px solid #ededed;
+}
+
+.activePage {
+  border: 1px solid black;
+}
+@media screen and (max-width: 580px) {
+  .tablesec {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .table {
+    width: 100%;
+  }
+}
